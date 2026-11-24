@@ -74,8 +74,10 @@ flowchart LR
     CI -- "build + test<br/>image" --> Reg["Private registry<br/>(ECR / ACR / Artifactory)"]
     Reg --> T1["Lambda"]
     Reg --> T2["ECS / Fargate"]
-    Reg --> T3["Kubernetes<br/>(EKS / AKS / OpenShift)"]
+    Reg --> T3["Kubernetes<br/>(EKS / AKS / GKE / OpenShift)"]
 ```
+
+> **Which Kubernetes?** Every cloud has its own managed version: **EKS** (Amazon), **AKS** (Microsoft Azure), **GKE** (Google, which created Kubernetes). **OpenShift** (Red Hat/IBM) isn't tied to a cloud: it's Kubernetes plus enterprise tooling, often run in a company's own data center. All of them run the same images and the same YAML.
 
 The usual setup:
 - **The image is the unit of release.** The same image goes to dev, staging and prod. Only configuration changes, through environment variables and secrets.
