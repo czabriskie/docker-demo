@@ -46,9 +46,11 @@ flowchart LR
 
 | Term | Meaning | Analogy |
 |---|---|---|
-| Dockerfile | Recipe for building an image | Recipe |
-| Image | Built snapshot that can't change | The baked cake, frozen |
-| Container | A running instance of an image | A slice being eaten |
+| Dockerfile | Instructions for building an image | Sheet music |
+| Image | Built snapshot that can't change | A recording: fixed, and copied anywhere |
+| Container | A running instance of an image | Someone playing the recording |
+
+A million people can play the same recording at once, and playing it never changes the recording. In our demo, the recording is the trained model.
 
 ```mermaid
 flowchart LR
