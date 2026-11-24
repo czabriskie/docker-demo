@@ -111,7 +111,7 @@ curl -s -X POST localhost:8080/predict \
 # {"species":"setosa","confidence":0.98}
 ```
 
-> Talking point: there's no Python on the host. The build trained the model.
+> Talking point: the build never touched my machine's Python. It trained the model inside a container, so it works the same whether you have Python 3.8, 3.12, or no Python at all.
 
 ---
 
