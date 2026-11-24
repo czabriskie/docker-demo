@@ -7,7 +7,7 @@ Run every command in a Linux terminal (Linux, macOS, or WSL on Windows).
 
 ### Step 1: Get the code
 ```bash
-git clone <REPO_URL> docker-demo
+git clone https://github.com/czabriskie/docker-demo.git docker-demo
 cd docker-demo
 ```
 
