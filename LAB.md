@@ -3,6 +3,10 @@
 **You need:** Docker and git. You do **not** need Python.
 Run every command in a Linux terminal (Linux, macOS, or WSL on Windows).
 
+**What you're building:** a container that predicts the species of an iris flower (*setosa*, *versicolor* or *virginica*) from four measurements: sepal length, sepal width, petal length and petal width, all in cm.
+
+**Where the data comes from:** the classic [Iris dataset](https://archive.ics.uci.edu/dataset/53/iris). It has 150 real flowers (50 of each species), measured by botanist Edgar Anderson and published by statistician Ronald Fisher in 1936. A copy ships inside the scikit-learn Python library, so the build loads it from there (`load_iris()` in `model/train.py`) and downloads nothing.
+
 ---
 
 ### Step 1: Get the code
